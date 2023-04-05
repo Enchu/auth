@@ -66,7 +66,7 @@ const Login = () => {
 
                             <div className={cl.input__control}>
                                 <div className={cl.input__content}>
-                                    <div>
+                                    <div className={cl.input__inline}>
                                         <MyInput
                                             required
                                             onChange={e => passwordHandler(e)}
@@ -88,8 +88,8 @@ const Login = () => {
                                     <span>Нет аккаунта?</span>
                                     <a className={cl.reg__link}>Зарегистрируйтесь</a>
                                 </div>
-
                             </div>
+
                         </form>
                     </div>
                 </div>
