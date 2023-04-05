@@ -86,12 +86,18 @@ const Login = () => {
                                 <MyButton>Войти</MyButton>
                                 <div className={cl.no__account}>
                                     <span>Нет аккаунта?</span>
-                                    <a className={cl.reg__link}>Зарегистрируйтесь</a>
+                                    <a className={cl.reg__link} href="#">Зарегистрируйтесь</a>
                                 </div>
                             </div>
-
                         </form>
                     </div>
+
+                    <div className={cl.footer}>
+                        <a className={cl.footer__link} href="#">Политика конфиденциальности</a>
+                        <a className={cl.footer__link} href="#">Помощь</a>
+                        <a className={cl.footer__link} href="#">Switch language</a>
+                    </div>
+
                 </div>
             </div>
         </div>
