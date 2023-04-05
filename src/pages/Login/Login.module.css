@@ -1,0 +1,209 @@
+.page__login{
+    position: relative;
+    display: flex;
+    flex: 0 0 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+@media (max-width: 599px) {
+    .page__login{
+        overflow: unset;
+    }
+}
+
+.container{
+    display: flex;
+    flex: 0 0 100%;
+}
+
+@media (max-width: 1024px) {
+    .container{
+        padding-top: 30px;
+        padding-bottom: 24px;
+    }
+}
+
+@media (max-width: 599px) {
+    .container{
+        padding: 16px 0;
+    }
+}
+
+.wrap{
+    display: flex;
+    flex-flow: column;
+    min-width: 400px;
+    width: 100%;
+    padding: 0 36px;
+    margin: 0 auto;
+}
+
+@media (max-width: 540px) {
+    .wrap{
+        align-items: flex-start;
+        min-width: 0;
+        padding: 0 52px;
+    }
+}
+
+@media (max-width: 374px) {
+    .wrap{
+        padding: 0 64px;
+    }
+}
+
+.content{
+    align-self: center;
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+    padding: 45px;
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255, .08);
+    box-shadow: inset 0px 0px 68px rgba(255,255,255,.05),inset 0px 4px 4px rgba(255,255,255,.15);
+    border-radius: 40px;
+    margin: 4vh 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .content{
+        max-width: 489px;
+    }
+}
+
+@media (max-height: 1024px) {
+    .content{
+        margin-top: 41px;
+    }
+}
+
+@media (max-width: 540px) {
+    .content{
+        max-width: 100%;
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 599px) {
+    .content{
+        padding: 32px;
+    }
+}
+
+.sign__in{
+    flex: 0 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    height: 32px;
+    color: #fff;
+    margin-bottom:44px;
+}
+
+@media (max-width: 1024px) {
+    .title{
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 599px) {
+    .title{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .title{
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 374px) {
+    .title{
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.input__control{
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.input__content{
+    display: flex;
+    flex-direction: column;
+    min-height: 24px;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(51, 51, 51);
+}
+
+.input__inline{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.login__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-top: 26px;
+}
+
+.remember__link{
+    font-family: inherit;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    background: none;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 11px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+}
+
+.span__password{
+    transition: color .15s cubic-bezier(0.25, 0.1, 0.25, 1);
+    color: rgba(255,255,255,.5);
+    vertical-align: middle;
+}
+
+.no__account{
+    font-family: inherit;
+    margin-top: 26px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    color: #999;
+}
+
+.reg__link{
+    font-family: inherit;
+    font-size: 16px;
+    margin-left: .25em;
+    color: #6966cc;
+    transition: color .15s cubic-bezier(0.25, 0.1, 0.25, 1);
+}

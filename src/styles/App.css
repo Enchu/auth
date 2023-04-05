@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik",sans-serif;
+}
+
+.page__auth{
+    background-color: #000;
+    overflow-y: auto;
+}
+
+.App{
+    min-width: 0;
+    height: 100%;
+}
+
+@media (max-width: 599px) {
+    .App{
+        height: auto;
+    }
+}
+
