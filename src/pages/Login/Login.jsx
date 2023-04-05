@@ -8,34 +8,39 @@ const Login = () => {
     const [password, setPassword] = useState('')
     const [emailValid,setEmailValid] = useState(false)
     const [passwordValid,setPasswordValid] = useState(false)
+    const [focused, setFocused] = useState(false)
+    const [required, setRequired] = useState(false)
 
     const nonClick = (e) => {
         e.preventDefault();
-        alert("email: " + email +'\n'+ "password: " + password)
+        setRequired(true)
+        if(email.length > 0 && password.length > 0){
+            alert("email: " + email +'\n'+ "password: " + password)
+        }
     }
 
     const emailHandler = (e) =>{
         setEmail(e.target.value)
-        if(e.target.value .length > 0){
-        }
-        else{
-        }
+        /*if(e.target.value .length > 0){
+            setRequired(true)
+        }*/
     }
 
     const passwordHandler = (e) =>{
         setPassword(e.target.value)
-        if(e.target.value.length > 0){
-        }
-        else{
-        }
+        /*if(e.target.value.length > 0){
+            setRequired(true)
+        }*/
     }
 
     const blurHandler = (e) => {
         switch (e.target.value){
             case 'email':
+                setFocused(true)
                 emailValid(true)
                 break
             case 'password':
+                setFocused(true)
                 passwordValid(true)
                 break
         }
@@ -53,7 +58,8 @@ const Login = () => {
                                 <div className={cl.input__content}>
                                     <div className={cl.input__inline}>
                                         <MyInput
-                                            required
+                                            required={required}
+                                            focused={focused.toString()}
                                             onChange={e => emailHandler(e)}
                                             value={email}
                                             onBlur={e => blurHandler(e)}
@@ -68,7 +74,8 @@ const Login = () => {
                                 <div className={cl.input__content}>
                                     <div className={cl.input__inline}>
                                         <MyInput
-                                            required
+                                            required={required}
+                                            focused={focused.toString()}
                                             onChange={e => passwordHandler(e)}
                                             value={password}
                                             onBlur={e => blurHandler(e)}
